@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://github.com/SlepenkovaT/Diplom/blob/main/img/77987fbb92422660c7bd27edcefc669d.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    top: 512px;
+    left: 540px;
+  }
+  .logo-button {
+    display: flex;
+    width: 990px;
+    height: 68px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    top: 1px;
+    padding: 14px 0px 0px 0px;
+  }
+  h1,
+  span {
+    white-space: nowrap;
+  }
+  
+  .headingv {
+    font-family: Roboto, sans-serif;
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 39px;
+    text-align: left;
+  }
+  .button {
+    display: flex;
+    width: 71px;
+    height: 40px;
+    padding: 12px 0px 0px 0px;
+    border-radius: 3px 0px 0px 0px;
+    border: none;
+    background-color: #16a6af;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+  .button:hover {
+    border: #ffffff 3px solid;
+  }
+  ul,
+  li,a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .navbar {
+    display: grid;
+    width: 990px;
+    height: 58px;
+    grid-template-columns: 124px 124px 241px 124px 124px 124px 124px;
+    grid-template-rows: 1;
+    margin-left: auto;
+    margin-right: auto;
+    top: 68px;
+  }
+  .day {
+    opacity: 0.9;
+    height: 48px;
+    display: inline;
+    background: #ffffff;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px #0000001f;
+    box-shadow: 0px 2px 2px 0px #0000003d;
+    padding: 11px 22px 11px 22px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+  }
+  .page-nav {
+  }
+  .day:hover {
+    border: #16A6AF 3px solid;
+  }
+  .days::before {
+    content: "Cегодня";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .days::after {
+    content: "31";
+    display: inline;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .main {
+    width: 990px;
+    height: 350px;
+    border-radius: 2px 0px 0px 0px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+  .section_movie__info {
+     background: #f1ebe6f2;
+    display: flex;
+    padding: 0px 0px 104.4px 15px;
+    gap: 20px;
+    width: 990px;
+    height: 350px;
+    margin-top: 15px;
+    padding-top:15px;
+  }
+  
+  .poster{
+    width: 125px;
+    height: 205px;
+    padding: 0px 0px 30px 0px;
+  }
+  .movie__poster::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: #393939;
+    width: 6px;
+    height: 14px;
+    border: 14.4px 0px 0px 6.4px;
+    background: #393939;
+  }
+  .Heading2 {
+    font-family: Roboto, sans-serif;
+  }
+  .movie__synopsis {
+    font-family: Roboto, sans-serif;
+    margin-top: 1rem;
+  }
+  .movie__data {
+    margin-top: 1rem;
+  }
+  .movie-seances{
+    margin-top:70px;
+    margin-left:-140px;
+   }
+  .time-link{
+    color: black;
+  }
+  .time {  
+     width: 53px;
+    height: 29px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    margin-bottom: 4px;
+    border-radius:2px;
+    box-shadow: 0px 0px 2px 0px #0000001F;
+    box-shadow: 0px 2px 2px 0px #0000003D;
+   }
+  .time:hover{
+     background: #d7d7d7;
+  }
+  .list {
+    display: flex;
+    gap:7px;
+     }
+  
