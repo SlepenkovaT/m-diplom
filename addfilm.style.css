@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul,
+  li,
+  a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/ac4abef1daf260595e4ff90b30750c65.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 990px;
+    border-radius: 2px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  .logo {
+    position: absolute;
+    top:36px;
+    color:#ffffff;
+    letter-spacing: 3px;
+    font-family: Roboto,sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 6px;
+  text-align: left;
+  }
+  .section-container {
+    display: flex;
+    width: 960px;
+    height: 57px;
+    padding: 16px 42px 14px 42px;
+    background: #63536c;
+    margin-top:60px;
+    }
+  .registration{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heading {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .section-container::after {
+    content: "";
+    align-self: center;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://github.com/SlepenkovaT/m-diplom/blob/main/img/364cf86195ab95323918a40135727296.png?raw=true);
+    height: 22px;
+    width: 22px;
+  }
+  .form {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+     width: 960px;
+    padding: 16px 104px 16px 104px;
+    background: #eae9ebf2;
+    margin-left: auto;
+    margin-right: auto;
+    color:#848484;
+    gap: 8px;
+  }
+  .field {
+    border: 1px solid #b7b7b7;
+     width: 750px;
+  height: 35px;
+    }
+  
+  .field-name{
+    font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  }
+  .field-text{
+    height: 36px;
+  }
+  .field-description{
+    height: 80px;
+    display:inline-block;
+  }
+  .button {
+    display: block;
+    width: 194px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    margin-top:30px;
+    margin-bottom:20px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: #16a6af;
+    color: #ffffff;
+   box-shadow: 0px 0px 3px 0px #0000001F;
+   box-shadow: 0px 3px 3px 0px #0000003D;
+   border: none;
+  text-align: center;
+   }
+  .button-cancellation {
+    width: 121px;
+    height: 40px;
+    border-radius: 3px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    border: none;
+    background: #ffffff;
+    color: #63536c;
+    text-transform: uppercase;
+  }
+  
+  
