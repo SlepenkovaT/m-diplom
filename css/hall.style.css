@@ -3,137 +3,134 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul,
-li,a {
-  list-style: none;
-  text-decoration: none;
-}
 .container {
-display: flex;
-flex-wrap: wrap;
-background-image: url("https://github.com/SlepenkovaT/Diplom/blob/main/img/77987fbb92422660c7bd27edcefc669d.jpg?raw=true");
-background-repeat: no-repeat;
-background-size: cover;
-width: 990px;
-border-radius: 2px 0px 0px 0px;
-margin-left: auto;
-margin-right: auto;
-align-items: center;
-margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/77987fbb92422660c7bd27edcefc669d.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 990px;
+  border-radius: 2px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 100px;
 }
 .img {
-padding: 15px;
+  padding: 15px;
 }
 .container-heading {
-background: #f1ebe6f2;
-opacity: 95%;
-
+  background: #f1ebe6f2;
+  opacity: 95%;
 }
 .section-heading {
-font-family: Roboto, sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: 18px;
-padding:15px 15px 15px 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 15px 15px 15px 15px;
 }
-.heading{
-padding:10px;
+.heading {
+  padding: 10px;
 }
-.time{
-padding:10px;
-font-weight: 300;
+.time {
+  padding: 10px;
+  font-weight: 300;
 }
-.heading3{
-padding:10px;
+.heading3 {
+  padding: 10px;
 }
 
 .buying-scheme__wrapper {
-width: 990px;
-padding: 15px 30px 15px 30px;
-background: #171d24;
+  width: 990px;
+  padding: 15px 30px 15px 30px;
+  background: #171d24;
 }
 .hall {
-box-sizing: border-box;
-width: 284px;
-margin-left: auto;
-margin-right: auto;
+  box-sizing: border-box;
+  width: 284px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .screen {
-width: 284px;
-padding-bottom: 15px;
+  width: 284px;
+  padding-bottom: 15px;
 }
 .row {
-display: flex;
-gap: 4px;
-margin-top: 4px;
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
 }
 
 .place {
-box-sizing: border-box;
-display: inline-block;
-width: 20px;
-height: 20px;
-border-radius: 4px;
-border: 1px solid #525252;
-background: #ffffff;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #525252;
+  background: #ffffff;
 }
 .place-none {
-background: #171d24;
-border: none;
+  background: #171d24;
+  border: none;
 }
 .place-busy {
-background: #000000;
+  background: #000000;
 }
 .place-vip {
-background: #f9953a;
+  background: #f9953a;
 }
 .place-choice {
-background: #25c4ce;
-box-shadow: 0px 0px 4px 0px #16a6af;
+  background: #25c4ce;
+  box-shadow: 0px 0px 4px 0px #16a6af;
 }
 .place:focus {
-background: #25c4ce;
-box-shadow: 0px 0px 4px 0px #16a6af;
+  background: #25c4ce;
+  box-shadow: 0px 0px 4px 0px #16a6af;
 }
 .buying-scheme__legend {
-padding: 30px 0 30px 0;
-color: #ffffff;
-display: flex;
-font-family: Roboto, sans-serif;
-font-size: 14px;
-font-weight: 300;
-line-height: 1px;
-text-align: left;
-gap: 10px;
+  padding: 30px 0 30px 0;
+  color: #ffffff;
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1px;
+  text-align: left;
+  gap: 10px;
 }
 .col-left {
- margin-left: auto;
-padding-right: 1.5rem;
+  margin-left: auto;
+  padding-right: 1.5rem;
 }
 .col-right {
-margin-right: auto;
+  margin-right: auto;
 }
-.buying-scheme__legend-price{
-margin-top:1rem;
+.buying-scheme__legend-price {
+  margin-top: 1rem;
 }
 .button-container {
-text-align: center;
-top: 503px;
-left: 379px;
-padding: 50px;
+  text-align: center;
+  top: 503px;
+  left: 379px;
+  padding: 50px;
 }
 .button {
-width: 232px;
-height: 40px;
-font-family: Roboto, sans-serif;
-line-height: 16px;
-font-size: 14px;
-font-weight: 500;
-text-transform: uppercase;
-border-radius: 3px;
-background: #16a6af;
-color: #ffffff;
-box-shadow: 0px 0px 3px 0px #0000001f;
-border: none;
-box-shadow: 0px 3px 3px 0px #0000003d;
+  width: 232px;
+  height: 40px;
+  font-family: Roboto, sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #16a6af;
+  color: #ffffff;
+  box-shadow: 0px 0px 3px 0px #0000001f;
+  border: none;
+  box-shadow: 0px 3px 3px 0px #0000003d;
+}
+.button:hover {
+  box-shadow: 0px 0px 4px 0px #16a6af;
 }
