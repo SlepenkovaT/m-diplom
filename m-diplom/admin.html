@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin.html</title>
+  <link rel="stylesheet" href="css/admin.style.css">
+</head>
+<body class="container">
+  <head class="container-logo">
+    <a href=#0> <img src="https://github.com/SlepenkovaT/Diplom/blob/main/img/Идёмвкино.png?raw=true" class="img"></a>
+    <p class="logo">Администраторррская</p>
+  </head>
+  <section class="registration">
+    <div class="section-container">
+      <h2 class="heading">Управление залами</h2>
+    </div>
+    <div class="conf-step__wrapper">
+      <div class="info">
+        <span>Доступные залы:</span>
+        <div class="list">
+          <span class="item"> - Зал 1</span>
+          <button type="button" class="btn"> </button>
+          <span class="item"> - Зал 2</span>
+          <button type="button" class="btn"> </button>
+        </div>
+      </div>
+      <div><button type="button" class="button">Создать зал </button>
+      </div>
+    </div>
+    <div class="section-container">
+      <h2 class="heading">Конфигурация залов</h2>
+    </div>
+    <div class="conf-step__wrapper">
+      <span class="text-paragraph">Выберите зал для конфигурации:</span>
+      <div class="list">
+        <span class="conf-step">Зал 1</span>
+        <span class="conf-step__selector">Зал 2</span>
+      </div>
+      <div class="conf-step__paragraph">
+        <span class="text-paragraph">Укажите количество рядов и максимальное количество кресел в ряду:</span>
+        <div class="conf-step__legend">
+          <label for="text">
+            <p class="text-row"> Рядов, шт</p>
+            <input type="text" class="field" name="text" placeholder="10" id="text">
+          </label>
+          <label for="text">
+            <p class="text-place">Мест, шт</p> <span class="gap-field">X</span>
+            <input type="text" class="field" name="text" placeholder="8" id="text">
+          </label>
+        </div>
+      </div>
+      <section class="Frame">
+        <div class="conf-step__paragraph">
+          <span class="text-paragraph">Теперь вы можете указать типы кресел на схеме зала:</span>
+          <div class="status">
+            <div class="status-place">
+              <span class="place place-status"> </span>
+              <p class="place-type">— обычные кресла</p>
+            </div>
+            <div class="status-place">
+              <span class="place place-vip "></span>
+              <p class="place-type">— VIP кресла</p>
+            </div>
+            <div class="status-place">
+              <span class="place place-none"></span>
+              <p class="place-type">— заблокированные (нет кресла)</p>
+            </div>
+          </div>
+          <p class="conf-step__hint">Чтобы изменить вид кресла, нажмите по нему левой кнопкой мыши</p>
+          <div class="screen">
+            <div class="row">
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+            </div>
+            <div class="row">
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+              <span class="place place-none"></span>
+            </div>
+            <div class="row">
+              <span class="place place-none"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-vip"></span>
+              <span class="place place-status"></span>
+              <span class="place place-none"></span>
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+
+            </div>
+            <div class="row">
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+              <span class="place place-status"></span>
+
+            </div>
+          </div>
+      </section>
+      <div class="container-button">
+        <button class="input-cancellation">Отмена</button>
+        <button class="button-save">Сохранить</button>
+      </div>
+    </div>
+    <div class="section-container">
+      <h2 class="heading">Конфигурация цен</h2>
+    </div>
+    <div class="conf-step__wrapper">
+      <span class="text-paragraph">Выберите зал для конфигурации:</span>
+      <div class="list">
+        <span class="conf-step__selector">Зал 1</span>
+        <span class="hall-price">Зал 2</span>
+      </div>
+      <div class="conf-step__paragraph">
+        <span class="text-paragraph">Установите цены для типов кресел:</span>
+        <div class="conf-step__legend price">
+          <label for="text">
+            <p class="text-row"> Цена, рублей</p>
+            <input type="text" class="field" name="text" placeholder="8" id="text"> <span class="gap-field">за</span>
+          </label>
+          <div class="status-place price">
+            <span class="place"> </span>
+            <p class="place-type">обычные кресла</p>
+          </div>
+        </div>
+        <div class="conf-step__legend price">
+          <label for="text">
+            <p class="text-row"> Цена, рублей</p>
+            <input type="text" class="price-field" name="text" placeholder="350" id="text"> <span class="gap-field gap-place-type">за</span>
+          </label>
+          <div class="status-place price">
+            <span class="place place-vip"> </span>
+            <p class="place-type">VIP кресла</p>
+          </div>
+        </div>
+        <div class="container-button">
+          <button class="input-cancellation">Отмена</button>
+          <button class="button-save">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <div class="section-container">
+      <h2 class="heading">Сетка сеансов</h2>
+    </div>
+    <div class="conf-step__wrapper">
+      <div><button type="button" class="button new-movie">Добавить фильм</button></div>
+      <div class="list-movie">
+        <div class="movie">
+          <img src="https://s3-alpha-sig.figma.com/img/bf2d/a8a5/dd7f95b02236c4b0fbf9b8ced45ca964?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PKnNF4m0W3AJmTF4q7HvMqLzTJRYkK9s4PvdUVYQiz8PgS3E6E2WMy213jybpBTJn5bNTyBNQiqBydAjboE4TDj1T6PmFcEjHZY9KdpZb5sX0fqZuNhMplnuaobDZUJprotshgQpzgOOghozzOOPZSYOniXBmAy1924qP~cu3uJxsqWtAInj5TfbxFfbgnpvHNolnKrGRviUcLC2e0NEC0l8uTxhZBap2oue-UCsn84x05JrFXfCnPQ9Ies1wTnodumyq81t3uRSc6tcd6shv~lewxKbjm7pqJBhe41itqHM~QhitK-N5yTHCFMKokYwUY002lAgibb-kY~C2alr3A__" class="poster">
+          <div class="movie__description">
+            <p>Звёздные войны XXIII: Атака клонированных клонов</p>
+            <p>130 минут</p>
+            <button type="button" class="btn"> </button>
+          </div>
+        </div>
+        <div class="movie">
+          <img src="https://s3-alpha-sig.figma.com/img/bf2d/a8a5/dd7f95b02236c4b0fbf9b8ced45ca964?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PKnNF4m0W3AJmTF4q7HvMqLzTJRYkK9s4PvdUVYQiz8PgS3E6E2WMy213jybpBTJn5bNTyBNQiqBydAjboE4TDj1T6PmFcEjHZY9KdpZb5sX0fqZuNhMplnuaobDZUJprotshgQpzgOOghozzOOPZSYOniXBmAy1924qP~cu3uJxsqWtAInj5TfbxFfbgnpvHNolnKrGRviUcLC2e0NEC0l8uTxhZBap2oue-UCsn84x05JrFXfCnPQ9Ies1wTnodumyq81t3uRSc6tcd6shv~lewxKbjm7pqJBhe41itqHM~QhitK-N5yTHCFMKokYwUY002lAgibb-kY~C2alr3A__" class="poster">
+          <div class="movie__description color-green">
+            <p>Миссия выполнима</p>
+            <p>120 минут</p>
+            <button type="button" class="btn"> </button>
+          </div>
+        </div>
+        <div class="movie">
+          <img src="https://s3-alpha-sig.figma.com/img/bf2d/a8a5/dd7f95b02236c4b0fbf9b8ced45ca964?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PKnNF4m0W3AJmTF4q7HvMqLzTJRYkK9s4PvdUVYQiz8PgS3E6E2WMy213jybpBTJn5bNTyBNQiqBydAjboE4TDj1T6PmFcEjHZY9KdpZb5sX0fqZuNhMplnuaobDZUJprotshgQpzgOOghozzOOPZSYOniXBmAy1924qP~cu3uJxsqWtAInj5TfbxFfbgnpvHNolnKrGRviUcLC2e0NEC0l8uTxhZBap2oue-UCsn84x05JrFXfCnPQ9Ies1wTnodumyq81t3uRSc6tcd6shv~lewxKbjm7pqJBhe41itqHM~QhitK-N5yTHCFMKokYwUY002lAgibb-kY~C2alr3A__" class="poster">
+          <div class="movie__description color-turquoise">
+            <p>Серая пантера</p>
+            <p>90 минут</p>
+            <button type="button" class="btn"> </button>
+          </div>
+        </div>
+      </div>
+      <div class="list-movie">
+        <div class="movie">
+          <img src="https://s3-alpha-sig.figma.com/img/bf2d/a8a5/dd7f95b02236c4b0fbf9b8ced45ca964?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PKnNF4m0W3AJmTF4q7HvMqLzTJRYkK9s4PvdUVYQiz8PgS3E6E2WMy213jybpBTJn5bNTyBNQiqBydAjboE4TDj1T6PmFcEjHZY9KdpZb5sX0fqZuNhMplnuaobDZUJprotshgQpzgOOghozzOOPZSYOniXBmAy1924qP~cu3uJxsqWtAInj5TfbxFfbgnpvHNolnKrGRviUcLC2e0NEC0l8uTxhZBap2oue-UCsn84x05JrFXfCnPQ9Ies1wTnodumyq81t3uRSc6tcd6shv~lewxKbjm7pqJBhe41itqHM~QhitK-N5yTHCFMKokYwUY002lAgibb-kY~C2alr3A__" class="poster">
+          <div class="movie__description color-blue">
+            <p>Движение вбок</p>
+            <p>95 минут</p>
+            <button type="button" class="btn"> </button>
+          </div>
+        </div>
+        <div class="movie">
+          <img src="https://s3-alpha-sig.figma.com/img/bf2d/a8a5/dd7f95b02236c4b0fbf9b8ced45ca964?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PKnNF4m0W3AJmTF4q7HvMqLzTJRYkK9s4PvdUVYQiz8PgS3E6E2WMy213jybpBTJn5bNTyBNQiqBydAjboE4TDj1T6PmFcEjHZY9KdpZb5sX0fqZuNhMplnuaobDZUJprotshgQpzgOOghozzOOPZSYOniXBmAy1924qP~cu3uJxsqWtAInj5TfbxFfbgnpvHNolnKrGRviUcLC2e0NEC0l8uTxhZBap2oue-UCsn84x05JrFXfCnPQ9Ies1wTnodumyq81t3uRSc6tcd6shv~lewxKbjm7pqJBhe41itqHM~QhitK-N5yTHCFMKokYwUY002lAgibb-kY~C2alr3A__" class="poster">
+          <div class="movie__description color-violet">
+            <p>Кот Да Винчи</p>
+            <p>100 минут</p>
+            <div>
+              <button type="button" class="btn"> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="seances-hall">
+        <h3>Зал 1</h3>
+        <div class="inner">
+          <div class="box">
+            <span class="desc-title">Миссия выполнима</span>
+          </div>
+          <div class="box">
+            <span class="desc-title">Миссия выполнима</span>
+          </div>
+          <div class="box box-color">
+            <span class="desc-title">Звёздные войны</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="seances-hall">
+        <h3>Зал 2</h3>
+        <div class="inner-hall">
+          <div class="box">
+            <span class="desc-title">Миссия выполнима</span>
+          </div>
+          <div class="box box-color">
+            <span class="desc-title">Звёздные войны</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-button">
+        <button class="input-cancellation">Отмена</button>
+        <button class="button-save">Сохранить</button>
+      </div>
+    </div>
+    <div class="section-container">
+      <h2 class="heading">Открыть продажи</h2>
+    </div>
+    <div class="conf-step__wrapper text-start-sales">
+      <span class="text-paragraph">Выберите залл для открытия/закрытия продаж:</span>
+      <div class="list hall-start-sales">
+        <span class="conf-step__selector">Зал 1</span>
+        <span class="hall-price">Зал 2</span>
+      </div>
+      <div class="conf-step__paragraph">
+        <span class="text-paragraph start-sales">Всё готово к открытию</span>
+        <div><button type="button" class="button button-start-sales">Открыть продажу билетов</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
