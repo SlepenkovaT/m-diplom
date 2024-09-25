@@ -157,13 +157,12 @@ a {
 .movie__data {
   margin-top: 1rem;
 }
-.movie-seances__hall {
-  margin-top: 15%;
-  margin-left:-35%;
-}
 .movie-seances{
-  margin-top: 10%;
-  margin-left:-20%;
+  margin-top: 35%;
+  margin-left:-130px;
+}
+.movie-container{
+   margin-top: 15%;
 }
 .time-link {
   color: black;
@@ -184,4 +183,5 @@ a {
 .list {
   display: flex;
   gap: 2%;
-    }
+  
+  }
