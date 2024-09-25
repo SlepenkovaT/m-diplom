@@ -5,199 +5,204 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>admin.html</title>
-  <link rel="stylesheet" href="css/admin.style.css">
 </head>
 <body class="container">
-  <head class="container-logo">
-    <a href=#0> <img src="https://github.com/SlepenkovaT/Diplom/blob/main/img/Идёмвкино.png?raw=true" class="img"></a>
+  <header class="container-logo">
+    <a href=#0> <img src="https://github.com/SlepenkovaT/Diplom/blob/main/img/Идёмвкино.png?raw=true" class="img" alt=""> </a>
     <p class="logo">Администраторррская</p>
-  </head>
-  <section class="registration">
-    <div class="section-container">
-      <h2 class="heading">Управление залами</h2>
-    </div>
-    <div class="conf-step__wrapper">
+  </header>
+  <main class="registration">
+    <section class="conf-step__wrapper">
+      <div class="heading-container">
+        <h2 class="heading">Управление залами</h2>
+      </div>
       <div class="info">
         <span>Доступные залы:</span>
-        <div class="list">
-          <span class="item"> - Зал 1</span>
-          <button type="button" class="btn"> </button>
-          <span class="item"> - Зал 2</span>
-          <button type="button" class="btn"> </button>
-        </div>
+        <ul class="items">
+          <li class="item"> - Зал 1
+            <button type="button" class="btn"> </button>
+          </li>
+          <li class="item"> - Зал 2
+            <button type="button" class="btn"> </button>
+          </li>
+        </ul>
       </div>
-      <div><a href="addhall.html"><button type="button" class="button">Создать зал </button></a>
+      <div class="info"><button type="button" class="button">Создать зал </button>
       </div>
-    </div>
-    <div class="section-container">
-      <h2 class="heading">Конфигурация залов</h2>
-    </div>
-    <div class="conf-step__wrapper">
-      <span class="text-paragraph">Выберите зал для конфигурации:</span>
-      <div class="list">
-        <span class="conf-step">Зал 1</span>
-        <span class="conf-step__selector">Зал 2</span>
+    </section>
+    <section class="conf-step__wrapper">
+      <div class="heading-container">
+        <h2 class="heading">Конфигурация залов</h2>
       </div>
-      <div class="conf-step__paragraph">
-        <span class="text-paragraph">Укажите количество рядов и максимальное количество кресел в ряду:</span>
+      <div class="text-paragraph info">
+        <span>Выберите зал для конфигурации:</span>
+      </div>
+      <ul class="list info">
+        <li class="conf-step__selector"><a class="list-link" href="">Зал 1</a></li>
+        <li class="conf-step__selector"><a class="list-link" href="">Зал2</a></li>
+      </ul>
+      <div class="conf-step__paragraph info">
+
+        <span>Укажите количество рядов и максимальное количество кресел в ряду:</span>
+
         <div class="conf-step__legend">
-          <label for="text">
+          <label for="row" class="text-row">
             <p class="text-row"> Рядов, шт</p>
-            <input type="text" class="field" name="text" placeholder="10" id="text">
+            <input type="text" class="field" name="text" placeholder="10" id="row">
           </label>
-          <label for="text">
+          <label for="place">
             <p class="text-place">Мест, шт</p> <span class="gap-field">X</span>
-            <input type="text" class="field" name="text" placeholder="8" id="text">
+            <input type="text" class="field" name="text" placeholder="8" id="place">
           </label>
         </div>
       </div>
-      <section class="Frame">
-        <div class="conf-step__paragraph">
-          <span class="text-paragraph">Теперь вы можете указать типы кресел на схеме зала:</span>
-          <div class="status">
-            <div class="status-place">
-              <span class="place place-status"> </span>
-              <p class="place-type">— обычные кресла</p>
-            </div>
-            <div class="status-place">
-              <span class="place place-vip "></span>
-              <p class="place-type">— VIP кресла</p>
-            </div>
-            <div class="status-place">
-              <span class="place place-none"></span>
-              <p class="place-type">— заблокированные (нет кресла)</p>
-            </div>
+      <div class="conf-step__paragraph info">
+        <span>Теперь вы можете указать типы кресел на схеме зала:</span>
+        <div class="status">
+          <div class="status-place">
+            <span class="place place-status"> </span>
+            <p class="place-type">— обычные кресла</p>
           </div>
-          <p class="conf-step__hint">Чтобы изменить вид кресла, нажмите по нему левой кнопкой мыши</p>
-          <div class="screen">
-            <div class="row">
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-            </div>
-            <div class="row">
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-              <span class="place place-none"></span>
-            </div>
-            <div class="row">
-              <span class="place place-none"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-vip"></span>
-              <span class="place place-status"></span>
-              <span class="place place-none"></span>
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-
-            </div>
-            <div class="row">
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-              <span class="place place-status"></span>
-
-            </div>
+          <div class="status-place">
+            <span class="place place-vip "></span>
+            <p class="place-type">— VIP кресла</p>
           </div>
-      </section>
+          <div class="status-place">
+            <span class="place place-none"></span>
+            <p class="place-type">— заблокированные (нет кресла)</p>
+          </div>
+        </div>
+        <p class="conf-step__hint">Чтобы изменить вид кресла, нажмите по нему левой кнопкой мыши</p>
+        <div class="screen">
+          <div class="row">
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+          </div>
+          <div class="row">
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+            <span class="place place-none"></span>
+          </div>
+          <div class="row">
+            <span class="place place-none"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-vip"></span>
+            <span class="place place-status"></span>
+            <span class="place place-none"></span>
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+
+          </div>
+          <div class="row">
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+            <span class="place place-status"></span>
+          </div>
+        </div>
+      </div>
       <div class="container-button">
         <button class="input-cancellation">Отмена</button>
         <button class="button-save">Сохранить</button>
       </div>
-    </div>
-    <div class="section-container">
-      <h2 class="heading">Конфигурация цен</h2>
-    </div>
-    <div class="conf-step__wrapper">
-      <span class="text-paragraph">Выберите зал для конфигурации:</span>
-      <div class="list">
-        <span class="conf-step__selector">Зал 1</span>
-        <span class="hall-price">Зал 2</span>
+    </section>
+    <section class="conf-step__wrapper">
+      <div class="heading-container">
+        <h2 class="heading">Конфигурация цен</h2>
       </div>
-      <div class="conf-step__paragraph">
-        <span class="text-paragraph">Установите цены для типов кресел:</span>
+      <div class="info">
+        <span>Выберите зал для конфигурации:</span>
+        <ul class="list">
+          <li class="conf-step__selector"><a class="list-link" href="">Зал 1</a></li>
+          <li class="conf-step__selector"><a class="list-link" href="">Зал 2</a></li>
+        </ul>
+      </div>
+      <div class="conf-step__paragraph info">
+        <span>Установите цены для типов кресел:</span>
         <div class="conf-step__legend price">
           <label for="text">
             <p class="text-row"> Цена, рублей</p>
-            <input type="text" class="field" name="text" placeholder="8" id="text"> <span class="gap-field">за</span>
+            <input type="text" class="field" name="text" placeholder="0" id="text"> <span class="gap-field">за</span>
           </label>
           <div class="status-place price">
             <span class="place"> </span>
@@ -219,108 +224,103 @@
           <button class="button-save">Сохранить</button>
         </div>
       </div>
-    </div>
-    <div class="section-container">
-      <h2 class="heading">Сетка сеансов</h2>
-    </div>
-    <div class="conf-step__wrapper">
-    <a href="addfilm.html"><button type="button" class="button new-movie">Добавить фильм</button></a>
-      <div class="list-movie">
+    </section>
+    <section class="conf-step__wrapper">
+      <div class="heading-container">
+        <h2 class="heading">Сетка сеансов</h2>
+      </div>
+      <div class="info"><button type="button" class="button new-movie">Добавить фильм</button></div>
+      <div class="list-movie info">
         <div class="movie">
-          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster.png.png?raw=true" class="poster">
+          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster1.jpg.png?raw=true" class="poster" alt="">
           <div class="movie__description">
             <p>Звёздные войны XXIII: Атака клонированных клонов</p>
             <p>130 минут</p>
-            <button type="button" class="btn"> </button>
+            <button type="button" class="btn basket"> </button>
           </div>
         </div>
         <div class="movie">
-          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster.png.png?raw=true" class="poster">
+          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster1.jpg.png?raw=true" class="poster" alt="">
           <div class="movie__description color-green">
             <p>Миссия выполнима</p>
             <p>120 минут</p>
-            <button type="button" class="btn"> </button>
+            <button type="button" class="btn basket"> </button>
           </div>
         </div>
         <div class="movie">
-          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster.png.png?raw=true" class="poster">
+          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster1.jpg.png?raw=true" class="poster" alt="">
           <div class="movie__description color-turquoise">
             <p>Серая пантера</p>
             <p>90 минут</p>
-            <button type="button" class="btn"> </button>
+            <button type="button" class="btn basket"> </button>
           </div>
         </div>
-      </div>
-      <div class="list-movie">
         <div class="movie">
-          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster.png.png?raw=true" class="poster">
+          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster1.jpg.png?raw=true" class="poster" alt="">
           <div class="movie__description color-blue">
             <p>Движение вбок</p>
             <p>95 минут</p>
-            <button type="button" class="btn"> </button>
+            <button type="button" class="btn basket"> </button>
           </div>
         </div>
         <div class="movie">
-          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster.png.png?raw=true" class="poster">
+          <img src="https://github.com/SlepenkovaT/m-diplom/blob/main/img/poster1.jpg.png?raw=true" class="poster" alt="">
           <div class="movie__description color-violet">
             <p>Кот Да Винчи</p>
             <p>100 минут</p>
-            <div>
-              <button type="button" class="btn"> </button>
-            </div>
+            <button type="button" class="btn basket"> </button>
           </div>
         </div>
       </div>
-      <div class="seances-hall">
+
+      <div class="seances-hall info">
         <h3>Зал 1</h3>
         <div class="inner">
-          <div class="box">
+          <div class="box time-box">
             <span class="desc-title">Миссия выполнима</span>
           </div>
-          <div class="box">
+          <div class="box description">
             <span class="desc-title">Миссия выполнима</span>
           </div>
           <div class="box box-color">
-            <span class="desc-title">Звёздные войны</span>
+            <span class="desc-title ">Звёздные войны</span>
           </div>
         </div>
 
       </div>
-      <div class="seances-hall">
+      <div class="seances-hall info">
         <h3>Зал 2</h3>
         <div class="inner-hall">
-          <div class="box">
+          <div class="box box-time">
             <span class="desc-title">Миссия выполнима</span>
           </div>
-          <div class="box box-color">
+          <div class="box box-color time">
             <span class="desc-title">Звёздные войны</span>
           </div>
         </div>
 
       </div>
+
       <div class="container-button">
         <button class="input-cancellation">Отмена</button>
         <button class="button-save">Сохранить</button>
       </div>
-    </div>
-    <div class="section-container">
-      <h2 class="heading">Открыть продажи</h2>
-    </div>
-    <div class="conf-step__wrapper text-start-sales">
-      <span class="text-paragraph">Выберите залл для открытия/закрытия продаж:</span>
-      <div class="list hall-start-sales">
-        <span class="conf-step__selector">Зал 1</span>
-        <span class="hall-price">Зал 2</span>
+
+    </section>
+    <section class="conf-step__wrapper text-start-sales">
+      <div class="heading-container">
+        <h2 class="heading">Открыть продажи</h2>
       </div>
+      <ul class="list info">
+        <li class="conf-step__selector"><a class="list-link" href="">Зал 1</a></li>
+        <li class="conf-step__selector"><a class="list-link" href="">Зал2</a></li>
+      </ul>
       <div class="conf-step__paragraph">
-        <span class="text-paragraph start-sales">Всё готово к открытию</span>
+        <span class="start-sales start">Всё готово к открытию</span>
         <div><button type="button" class="button button-start-sales">Открыть продажу билетов</button>
         </div>
       </div>
-    </div>
-
-  </section>
-
+    </section>
+  </main>
 </body>
-
 </html>
