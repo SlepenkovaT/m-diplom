@@ -1,435 +1,481 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  ul,
-  li,
-  a {
-    list-style: none;
-    text-decoration: none;
-  }
+@media (min-width: 991px) {
   .container {
-    box-sizing: border-box;
-    display: flex;
+    width: 100%;
+    height: 100%;
+   }
+ }
+@media (max-width: 990px) and (min-width: 641px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    font-size: 50%;
+    flex-wrap: wrap;       
+  }
+    }
+@media (min-width: 360px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    font-size: 30%;
     flex-wrap: wrap;
-    background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/ac4abef1daf260595e4ff90b30750c65.jpg?raw=true");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 990px;
-    border-radius: 2px 0px 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
+      }
   }
-  .img {
-    margin-top: 30px;
-    margin-left: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  font-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/ac4abef1daf260595e4ff90b30750c65.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img {
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 60%;
+  letter-spacing: 6px;
+  text-align: left;
+  margin-left: 3%;
+}
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  width: 100%;
   }
-  .logo {
-    position: absolute;
-    top: 66px;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 6px;
-    text-align: left;
-    margin-left: 60px;
+.heading-container {
+  display: flex;
+  background: #63536c;
+  padding: 4% 6% 3% 14%;
+  margin-top:2%;
+   }
+.heading {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 120%;
+    }
+.heading::before {
+  content: "";
+   position: absolute;
+   color: #bc95d6;
+  left:5%;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  border: 4px solid #bc95d6;
+  background: #ffffff;
+}
+.heading-container::before {
+  content: "";
+  position: absolute;
+  left:7.2%;
+  top: 0%;
+  bottom:0%;
+  color: #bc95d6;
+  border-left: 2px #bc95d6 solid;
+}
+.heading-container::after {
+  content: "";
+  align-self: center;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://github.com/SlepenkovaT/m-diplom/blob/main/img/73d6479ead61b1ba48fd002b57c8c317.png?raw=true);
+  height: 16px;
+  width: 24px;
+}
+.conf-step__wrapper {
+  color: #000000;
+  width: 100%;
+  background: #eae9ebf2;
+  font-family: Roboto, sans-serif;
+  font-size: 100%;
+   position: relative;
+   }
+.button {
+  display: flex;
+  width: 20%;
+  padding: 1% 3% 1% 3%;
+  border-radius: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: 90%;
+   text-align: center;
+  border: none;
+  background: #16a6af;
+  color: #ffffff;
+  text-transform: uppercase;
+ 
+}
+.info {
+  padding-top: 3%;
+  padding-left:10%;
+}
+.list {
+   padding-top: 5%;
+   display: flex;
+   }
+.list-link{
+  color:black;
+}
+.item { 
+  display: flex;
+  padding: 1%;
+  gap:1%;
+}
+
+.conf-step__selector {
+  padding: 2% 3% 2% 3%;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 0px #0000001f;
+  box-shadow: 0px 3px 3px 0px #0000003d;
+  background: #ffffff73;
+  opasity: 0.45;
+  font-family: Roboto, sans-serif;
+  color:#000000;
+}
+.conf-step__selector:hover {
+  padding: 2% 3% 2% 3%;
+  box-shadow: 0px 0px 2px 0px #0000001f;
+  box-shadow: 0px 2px 2px 0px #0000003d;
+  box-shadow: 0px 6px 8px 0px #0000003d;
+  background-color: #ffffff;
+  font-weight: 900;
+  color:#000000;
   }
-  .registration {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    display: block;
+.conf-step {
+  padding: 2% 3% 2% 3%;
+  box-shadow: 0px 0px 2px 0px #0000001f;
+  box-shadow: 0px 2px 2px 0px #0000003d;
+  box-shadow: 0px 6px 8px 0px #0000003d;
+  background-color: #ffffff;
+  font-weight: 900;
+}
+
+.conf-step__legend {
+  display: flex;
+  color: #848484;
+  padding-top: 2%;
+}
+.text-place {
+  padding-left: 10%;
+}
+.field {
+  width: 80%;
+  border: 1px #b7b7b7 solid;
+  color: #848484;
+  padding: 4% 0% 4% 3%;
   }
-  .section-container {
-    display: flex;
-    width: 962px;
-    height: 95px;
-    padding: 16px 104px 16px 104px;
-    background: #63536c;
-    justify-content: start;
+.status {
+  display: flex;
+}
+.status-place {
+  display: flex;
+  gap: 0.8em;
+  padding: 4% 3% 2% 3%;
+  color: #848484;
+}
+.screen {
+  box-sizing: content-box;
+  width: 95%;
+ padding: 5% 0 5% 0;
+  border: 1px solid #000000;
+}
+.screen::before {
+  content: "Экран";
+  display: block;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  padding: 2% 0;
+  letter-spacing: 19px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  margin-top:1%;
+}
+.place {
+  box-sizing: border-box;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 0.4em;
+  border: 1px solid #393939;
+  background: #c4c4c4;
   }
-  .heading {
-    display: flex;
-    align-items: center;
-    font-family: Roboto, sans-serif;
+.place-none {
+  background: none;
+  border: 1px solid #c4c4c4;
+}
+.place-vip {
+  background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/span.conf-step__chair.png?raw=true");
+}
+.conf-step__hint {
+  color: #848484;
+  padding: 3% 0;
+  font-size: 100%;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  }
+.input-cancellation {
+  display: flex;
+  width: 17%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 3px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  background: #ffffff;
+  color: #63536c;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.button-save {
+  width: 23%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 0.3em;
+  font-family: Roboto, sans-serif;
+  border: none;
+  background: #16a6af;
+  color: #ffffff;
+  text-transform: uppercase;
+  }
+.container-button {
+  justify-content: center;
+  padding: 4%;
+  display: flex;
+  gap:1%;
+  font-size: 90%;
+  }
+.price {
+  align-items: center;
+}
+.place-type {
+  align-items: center;
+  display: flex;
+  }
+.price-field {
+  width: 35%;
+  padding: 5% 0% 5% 3%;
+  border: 1px #b7b7b7 solid;
+  color: #000000;
+ }
+.new-movie {
+  width: 25%;
+  padding: 2% 3% 2% 3%;
+}
+.list-movie {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1%;
+ 
+ }
+.poster {
+  width: 20%;
+  height: 80%;
+}
+.movie {
+  display: flex;
+  flex-wrap:wrap;
+   padding-top:1%;
+    width:32%;
+  height:100%;
+}
+.seances-hall {
+  padding-top: 5%;
+}
+.movie__description {
+  position: relative;
+  padding: 0 4%;
+  width: 80%;
+  padding: 2% 3% 2% 3%;
+  background: #caff85;
+  border: 1px solid #0000004d;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 85%;
+  text-align: left;
+}
+.color-green {
+  background: #85ff89;
+}
+.color-turquoise {
+  background: #85ffd3;
+}
+.color-blue {
+  background: #85e2ff;
+}
+.color-violet {
+  background: #8599ff;
+}
+.btn {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: 0px 3px 3px 0px #0000003d;
+  border: none;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
   
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25px;
-    color: #ffffff;
-    text-transform: uppercase;
-    gap: 20px;
+}
+.btn::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/__before%20(1).png?raw=true");
+  width: 1em;
+  height: 1em;
+ 
+}
+.basket{
+ position: absolute;
+  right:0.5%;
+  bottom:0.6%;
+}
+
+.inner {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  width: 90%;
+  padding: 1% 0% 1% 0%;
+  border: 1px solid #848484;
+}
+.inner-hall {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: end;
+  width: 90%;
+  padding: 1% 0% 1% 0%;
+  border: 1px solid #848484;
+}
+.box {
+  display: flex;
+  align-self: center;
+  width: 10%;
+  padding: 1% 1% 1% 1%;
+  background: #85ff89;
+  border: 1px solid #0000004d;
+  position: relative;
+}
+
+.desc-title {
+  font-family: Roboto, sans-serif;
+  font-size: 60%;
+  font-weight: 400;
+  text-align: left;
   }
-  .heading::before {
-    content: "";
-    display: flex;
-    align-self: center;
-    margin-left: -60px;
-    color: #bc95d6;
-    height: 48px;
-    width: 44px;
-    height: 44px;
-    border-radius: 27px;
-    border: 4px solid #bc95d6;
-    background: #ffffff;
+.description{
+  margin-left:40%;
+  position: relative;
   }
-  .section-container::before {
-    content: "";
-    display: flex;
-    position: absolute;
-    margin-left: -35px;
-    margin-top: 53px;
-    color: #bc95d6;
-    height: 990px;
-    border-left: 2px #bc95d6 solid;
+.box-color {
+  background: #caff85;
+  position: relative;
+}
+.hall-start-sales {
+   gap:5%;
+   display: flex;
+}
+.button-start-sales {
+  display: block;
+  width: 30%;
+  padding: 2% 1% 2% 1%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%;
   }
-  .section-container::after {
-    content: "";
-    align-self: center;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/73d6479ead61b1ba48fd002b57c8c317.png?raw=true");
-    height: 16px;
-    width: 24px;
-  }
-  .conf-step__wrapper {
-    color: #000000;
-    width: 962px;
-    padding: 16px 104px 16px 104px;
-    background: #eae9ebf2;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-  }
-  .button {
-    width: 159px;
-    height: 40px;
-    padding: 11.2px 31.38px 11.9px 31.73px;
-    border-radius: 3px;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: center;
-    border: none;
-    background: #16a6af;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin: 20px 0;
-  }
-  .info {
-    padding-top: 20px;
-  }
-  .list {
-    padding-top: 20px;
-  }
-  .item {
-    text-align: left;
-    padding: 15px;
-  }
-  .conf-step__selector {
-    width: 81px;
-    height: 42px;
-    padding: 12.2px 20.25px 12.9px 21px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 3px 0px #0000001f;
-    box-shadow: 0px 3px 3px 0px #0000003d;
-    background: #ffffff73;
-    font-family: Roboto, sans-serif;
-  }
-  .conf-step {
-    width: 100px;
-    height: 46px;
-    padding: 15.41px 23.03px 13.9px 23.1px;
-    box-shadow: 0px 0px 2px 0px #0000001f;
-    box-shadow: 0px 2px 2px 0px #0000003d;
-    box-shadow: 0px 6px 8px 0px #0000003d;
-    background-color: #ffffff;
-    font-weight: 900;
-  }
-  .conf-step__paragraph {
-    padding-top: 40px;
-  }
-  .text-paragraph {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  .conf-step__legend {
-    display: flex;
-    color: #848484;
-    padding-top: 15px;
-  }
-  .text-place {
-    padding-left: 35px;
-  }
-  .field {
-    width: 100px;
-    height: 36px;
-    padding: 8px 8.8px 9px 8.8px;
-    border: 1px #b7b7b7 solid;
-    color: #848484;
-    padding: 0 10px;
-  }
-  .gap-field {
-    padding: 0 10px;
-  }
-  .Frame {
-    width: 962px;
-  }
-  .status {
-    display: flex;
-  }
-  .status-place {
-    display: flex;
-    gap: 10px;
-    padding: 30px 30px 15px 0;
-    color: #848484;
-  }
-  .screen {
-    box-sizing: content-box;
-    width: 826px;
-    height: 450px;
-    border: 1px solid #000000;
-  }
-  .screen::before {
-    content: "Экран";
-    display: block;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    padding: 15px 0;
-    letter-spacing: 19px;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .place {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 26px;
-    height: 26px;
-    border-radius: 4px;
-    border: 1px solid #393939;
-    background: #c4c4c4;
-  }
-  .place-none {
-    background: none;
-    border: 1px solid #c4c4c4;
-  }
-  .place-vip {
-    background-image: url(https://github.com/SlepenkovaT/m-diplom/blob/main/img/span.conf-step__chair.png?raw=true);
-  }
-  .conf-step__hint {
-    color: #848484;
-    padding: 20px 0;
-    font-size: 14px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 16px;
-  }
-  .input-cancellation {
-    width: 121px;
-    height: 40px;
-    border-radius: 3px;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    border: none;
-    background: #ffffff;
-    color: #63536c;
-    text-transform: uppercase;
-  }
-  .button-save {
-    width: 146px;
-    height: 40px;
-    border-radius: 3px;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    border: none;
-    background: #16a6af;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-left: 10px;
-  }
-  .container-button {
-    text-align: center;
-    padding: 25px;
-  }
-  .hall-price {
-    width: 100px;
-    height: 46px;
-    padding: 15.41px 23.03px 13.9px 23.1px;
-    box-shadow: 0px 0px 2px 0px #0000001f;
-    box-shadow: 0px 2px 2px 0px #0000003d;
-    box-shadow: 0px 6px 8px 0px #0000003d;
-    background-color: #ffffff;
-    font-weight: 900;
-  }
-  .price {
-    align-items: center;
-  }
-  .place-type {
-    align-items: center;
-    display: flex;
-  }
-  .price-field {
-    width: 74px;
-    height: 36px;
-    border: 1px #b7b7b7 solid;
-    color: #000000;
-    padding: 0 10px;
-  }
-  .gap-place-type {
-    padding-left: 40px;
-  }
-  .new-movie {
-    width: 194px;
-    height: 40px;
-  }
-  .new-movie:hover {
-    box-shadow: 0px 0px 4px 0px #16a6af;
-  }
-  
-  .list-movie {
-    display: flex;
-    width: 791px;
-    top: 104px;
-    left: 104px;
-    gap: 15px;
-    padding-top: 15px;
-  }
-  .poster {
-    width: 38px;
-    height: 50px;
-  }
-  .movie {
-    display: flex;
-  }
-  .seances-hall {
-    padding-top: 20px;
-  }
-  .movie__description {
-    padding: 0 10px;
-    width: 221px;
-    height: 52px;
-    background: #caff85;
-    border: 1px solid #0000004d;
-    display: block;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-  }
-  .color-green {
-    background: #85ff89;
-  }
-  .color-turquoise {
-    background: #85ffd3;
-  }
-  .color-blue {
-    background: #85e2ff;
-  }
-  .color-violet {
-    background: #8599ff;
-  }
-  .btn {
-    display: block;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0px 3px 3px 0px #0000003d;
-    border: none;
-    border-radius: 3px;
-  }
-  .btn::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-image: url("https://github.com/SlepenkovaT/m-diplom/blob/main/img/__before%20(1).png?raw=true");
-    width: 12px;
-    height: 12px;
-  }
-  
-  .inner {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 720px;
-    height: 60px;
-    border: 1px solid #848484;
-  }
-  .inner::before {
-    content: "";
-    display: block;
-    position: absolute;
-    color: #848484;
-    height: 5px;
-    border-left: 1px #848484 solid;
-  }
-  .inner-hall {
-    display: flex;
-    justify-content: end;
-    width: 720px;
-    height: 60px;
-    border: 1px solid #848484;
-  }
-  .box {
-    display: flex;
-    align-self: center;
-    width: 72px;
-    height: 40px;
-    padding: 10px 0px 0px 0px;
-    background: #85ff89;
-    border: 1px solid #0000004d;
-  }
-  
-  .desc-title {
-    font-family: Roboto, sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 10px;
-    text-align: center;
-    padding: 0 10px;
-  }
-  .box-color {
-    background: #caff85;
-  }
-  .hall-start-sales {
-    margin-top: 50px;
-  }
-  .text-start-sales {
-    padding-top: 30px;
-  }
-  .button-start-sales,
-  .start-sales {
-    display: block;
-    width: 270px;
-    height: 40px;
-    padding: 5px 0;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+.start{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin:5% 0%;
+}
+button{
+box-shadow: 0px 0px 3px 0px #0000001F;
+  box-shadow: 0px 3px 3px 0px #0000003D;
+}
+
+.box-color::before {
+ content: "";
+ position: absolute;
+  bottom:-40%;
+ left:0;
+ height:10%;
+ border: 1px #848484 solid;
+}
+.box::before {
+ content: "";
+ position: absolute;
+ bottom:-40%;
+ left:0;
+ height:10%;
+ border: 1px #848484 solid;
+}
+.box::after {
+  content: "12:00";
+ position: absolute;
+ bottom:-90%;
+  left:-15%;
+  font-size: 80%;
+  color:#848484;
+}
+.box-color::after {
+  content: "14:00";
+ position: absolute;
+ bottom:-90%;
+  left:-20%;
+  font-size: 80%;
+  color:#848484;
+}
+.box-time::after {
+  content: "19:50";
+ position: absolute;
+ bottom:-90%;
+  left:-20%;
+  font-size:80%;
+  color:#848484;
+}
+.time::after {
+  content: "22:00";
+ position: absolute;
+ bottom:-90%;
+  left:-20%;
+  font-size: 80%;
+  color:#848484;
+}
+.time-box::after {
+  content: "00:00";
+ position: absolute;
+ bottom:-90%;
+  left:-20%;
+  font-size: 80%;
+  color:#848484;
+}
