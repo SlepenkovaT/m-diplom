@@ -119,6 +119,7 @@ text-align: left;
 }
 .field {
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid #b7b7b7;
    width: 50rem;
    height: 100%;
@@ -126,6 +127,7 @@ text-align: left;
 
 .field-name{
   display: flex;
+  flex-wrap: wrap;
   font-family: Roboto;
 font-size: 16px;
 font-weight: 400;
@@ -133,15 +135,21 @@ line-height: 18.75px;
 }
 .field-text{
   display: flex;
+  flex-wrap: wrap;
   height: 36px;
 }
 .field-description{
   display: flex;
+  flex-wrap: wrap;
   height: 80px;
   display:inline-block;
 }
+.container-button{
+  display: flex;
+  flex-wrap: wrap;
+  gap:5%;
+}
 .button {
-display: flex;
   width: 30%;
   height: 40px;
   font-family: Roboto, sans-serif;
@@ -162,6 +170,7 @@ display: flex;
    }
 .button-cancellation {
   display: flex;
+  flex-wrap: wrap;
   width: 121px;
   height: 40px;
   border-radius: 3px;
